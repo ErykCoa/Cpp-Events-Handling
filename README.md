@@ -4,6 +4,8 @@ Couple header files that help to create event-driven applications in C++ 11.
 
 IMPORTANT NOTES:
 
+EventHandler.h is the main file.
+
 For every event you can add several handlers by AddHandler() function. 
 When event is fired each handler is placed in the task queue and awaits to be handled by one of the threads. 
 If number of threads is greater than 1, tasks are handled in no order.
